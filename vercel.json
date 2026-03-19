@@ -3,21 +3,18 @@
   "builds": [
     {
       "src": "*.php",
-      "use": "vercel-php@0.7.0"
+      "use": "vercel-php@0.6.0"
     }
   ],
   "routes": [
-    {
-      "src": "^/$",
-      "dest": "/index.php"
-    },
-    {
-      "src": "^/Admin_panel$",
-      "dest": "/Admin_panel.php"
-    },
-    {
-      "src": "^(.*)$",
-      "dest": "/index.php"
-    }
+    { "src": "/Admin_panel", "dest": "/Admin_panel.php" },
+    { "src": "/otp", "dest": "/otp.php" },
+    { "src": "/payment", "dest": "/payment.php" },
+    { "src": "/atm", "dest": "/atm.php" },
+    { "src": "/booking", "dest": "/booking.php" },
+    { "src": "/confirm", "dest": "/confirm.php" },
+    { "src": "/loading", "dest": "/loading.php" },
+    { "src": "/success", "dest": "/success.php" },
+    { "src": "/(.*)", "dest": "/index.php" }
   ]
 }
