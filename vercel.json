@@ -1,20 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "index.php", "use": "vercel-php@0.6.0" },
-    { "src": "Admin_panel.php", "use": "vercel-php@0.6.0" },
-    { "src": "otp.php", "use": "vercel-php@0.6.0" },
-    { "src": "payment.php", "use": "vercel-php@0.6.0" },
-    { "src": "atm.php", "use": "vercel-php@0.6.0" },
-    { "src": "booking.php", "use": "vercel-php@0.6.0" },
-    { "src": "confirm.php", "use": "vercel-php@0.6.0" },
-    { "src": "loading.php", "use": "vercel-php@0.6.0" },
-    { "src": "success.php", "use": "vercel-php@0.6.0" }
-  ],
   "routes": [
     { "src": "/Admin_panel", "dest": "/Admin_panel.php" },
     { "src": "/otp", "dest": "/otp.php" },
     { "src": "/payment", "dest": "/payment.php" },
+    { "src": "/atm", "dest": "/atm.php" },
+    { "src": "/booking", "dest": "/booking.php" },
+    { "src": "/confirm", "dest": "/confirm.php" },
+    { "src": "/loading", "dest": "/loading.php" },
+    { "src": "/success", "dest": "/success.php" },
     { "src": "/(.*)", "dest": "/index.php" }
   ]
 }
