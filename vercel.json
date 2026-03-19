@@ -8,6 +8,6 @@
   ],
   "routes": [
     { "src": "/Admin_panel", "dest": "/Admin_panel.php" },
-    { "src": "/(.*)", "dest": "/$1.php" }
+    { "src": "/(.*)", "dest": "/index.php" }
   ]
 }
