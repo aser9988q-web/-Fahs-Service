@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "*.php": {
-      "runtime": "@vercel/node@20.19.0"
-    }
-  },
   "builds": [
     {
       "src": "*.php",
@@ -12,15 +7,17 @@
     }
   ],
   "routes": [
-    { "src": "/Admin_panel", "dest": "/Admin_panel.php" },
-    { "src": "/otp", "dest": "/otp.php" },
-    { "src": "/payment", "dest": "/payment.php" },
-    { "src": "/loading", "dest": "/loading.php" },
-    { "src": "/success", "dest": "/success.php" },
-    { "src": "/confirm", "dest": "/confirm.php" },
-    { "src": "/booking", "dest": "/booking.php" },
-    { "src": "/atm", "dest": "/atm.php" },
-    { "src": "/", "dest": "/index.php" },
-    { "src": "/(.*)", "dest": "/$1.php" }
+    {
+      "src": "/Admin_panel",
+      "dest": "/Admin_panel.php"
+    },
+    {
+      "src": "/admin_panel",
+      "dest": "/Admin_panel.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
